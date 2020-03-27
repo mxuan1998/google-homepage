@@ -78,6 +78,7 @@ body{
 }
 
 #search-text{
+    border: none;
     margin: auto 0;
     line-height: 34px;
     flex: 100%;
