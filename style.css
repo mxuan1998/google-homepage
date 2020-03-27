@@ -1,118 +1,152 @@
 body{
-    font-family: arial;
+    font-family: arial, sans-serif;
 }
 
-#googleimage{
-    display: absolute;
-    background-image: url ("../image/logo.png");
-    background-size: 269px 95px;
-    background-repeat: no-repeat;
-    height: 95px;
-    width: 269px;
-    margin-left: 540px;
-}
-
-#content{
-    position: relative;
-    top: 132px;
-}
-
-#googleform{
-
-}
-
-#searchtextwrapper{
-    margin-left: 388px;
-    width: 574px;
-    height: 33px;
-}
-
-#searchtext{
-    position: relative;
-    width: 99%;
-    height: 80%;
-    font-size: 15px;
-    padding: 1px 0px 1px 8px;
-    border: 1px #cdcdcd solid;
-}
-
-#searchtext: hover{
-    border: 1px #b7b7b7 solid;
-}
-
-#buttons{
-    width: 230px;
-    margin: auto;
-    padding: 2px;
-}
-
-#googlesearch, #feelinglucky{
-    vertical-align: center;
-    padding: 0;
+#top-bar{
+    min-width: 181px;
     height: 30px;
-    border: 1px #dcdcdc solid;
-    font-size: 11px;
-    background: linear-gradient (#f5f5f5, #f1f1f1);
-}
-
-#googlesearch{
-    width: 96px;
-}
-
-#feelinglucky{
-    width: 111px;
-}
-
-#topbar{
-    width: 100%;
-    height: 60px;
-    position: relative;
-}
-
-#topbarcontent{
-    position: absolute;
-    height: 31px;
-    float: right;
-    top: 40%;
-    margin-top: -16px;
-    margin-right: 20px;
-    text-align: middle;
-    font-family: arial;
+    padding: 15px 15px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     font-size: 13px;
-    bottom: 30px;
-    right: 1.5%;
 }
 
-#apps{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url ("../images/sprites.png")
-    background-repear: no-repear;
-    background-position: -101px -62px;
-    opacity: 0.55;
-    margin-top: -4px;
+#gmail-link, #images-link{
+    margin: 0 15px 0 0;
+    color: rgba(0,0,0,0.87)
+    align-self: center;
+    vertical-align: middle;
 }
 
-#notification{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url ("../images/sprites.png")
-    background-repear: no-repear;
-    background-position: -132px -61px;
-    opacity: 0.55;
-    margin-top: -4px;
+#app-button{
+    margin: 0 15px 0 0;
+    align-self: center;
+    opacity: 0.5;
 }
 
-#googleshare{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url ("../images/sprites.png")
-    background-repear: no-repear;
-    background-position: -259px -107px;
-    opacity: 0.55;
-    vertical-align: bottom;
+#signin-button{
+    margin: 0 10px 0 0;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    color: #fff;
+    border-radius: 2px;
+    padding: 8px 15px 15px 15px;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea)
 }
 
+#signin-button: hover{
+    opacity: 0.9;
+}
+
+#gmail-link: hover, #image-link: hover{
+    text-decoration: underline;
+}
+
+#app-button: hover{
+    opacity: 1;
+}
+
+#google-logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#searchbox{
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+#searchbox: hover{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19)
+}
+
+#search-icon{
+    display: flex;
+    opacity: 0.5;
+    height: 15px;
+    width: 15px;
+    padding: 0 15px;
+    margin: auto 0;
+}
+
+#search-text{
+    margin: auto 0;
+    line-height: 34px;
+    flex: 100%;
+    font-size: 16px;
+}
+
+#mic-icon{
+    height: 24px;
+    width: 24px;
+    margin: auto 0;
+    padding: 0 15px;
+}
+
+#search-buttons-container{
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+    width: 25%;
+    margin: 25px auto 0;
+    justify-content: center;
+}
+
+.search-buttons{
+    margin: 1px 10px;
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.search-buttons: hover{
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+}
+
+#left-footer-container{
+    margin-left; 27px;
+    float: left;
+}
+
+#right-footer-container{
+    margin-left: 27px;
+    float: right;
+}
+
+.footer-item{
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    color: #5f6368;
+    padding-left: 27px;
+    margin: 0
+}
+
+.footer-item{
+    text-decoration: underline;
+}
