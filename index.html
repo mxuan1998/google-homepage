@@ -1,33 +1,58 @@
 <!doctype html>
+
 <html>
     <head>
-        <title>Google</title>
-        
+        <title>Google Homepage</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div id="topbar">
-            <div id="topbarcontent">
-                <a href="#"><span>Gmail</span></a> <aherf="#"><span>Images</span></a>
-             </div>
+        <header>
+            <div id="top-bar">
+                    <a id="gmail-link" href="#"><span>Gmail</span></a> 
+                    <a id="images-link" href="#">Image</a>
+                    <a id="app-button" href="#" role="button"><img src="images/app.svg" width=16px height 16px alt="Google apps"></a>
+                    <a id="signin-button" href="#" role="button">Sign in</a>
+            </div>
+        </header>
+
+        <div id="empty-space" style="height: 145px"></div>
+
+        <div id="google-logo">
+            <img src="images/logo.png" alt="Google logo">
         </div>
 
-        <div id="content">
-            <div id="googleimage" title="Google"></div><br/>
-            <div id="googleform">
-                <form action="#">
-                    <div id="searchtextwrapper">
-                        <input type="text" name="searchtext" value="" id="searchtext" autocomplete="off">
-                    </div>
-                    <br/>
-                    <div id="buttons">
-                        <input type="submit" name="googlesearch" value="Google Search" id="googlesearch">
-                        <input type="submit" name="feelinglucky" value="I'm Feeling Lucky" id="feelinglucky">
-                    </div>
-                </form>
-            </div>
-        </div>
+       <form margin: 0 auto;>
+           <div id="searchbox">
+               <img id="search-icon" src="images/search.png" alt="search">
+               <input type="text" id="search-text" maxlength="2048" role="combobox">
+               <img id="mic-icon" src="images/micro.jog" alt="mic">
+           </div> 
+           <div id="search-buttons-container">
+               <input type="button" class="search-buttons" value="Google Search">
+               <input type="button" class="search-buttons" value="I'm Feeling Lucky">
+           </div>
+       </form>
+
+       <footer>
+           <div id="left-footer-container">
+               <nav>
+                   <a class="footer-item" href="#">Advertising</a>
+                   <a class="footer-item" href="#">Business</a>
+                   <a class="footer-item" href="#">About</a>
+                   <a class="footer-item" href="#">How Search Works</a>
+               </nav>
+           </div>
+
+           <div id="right-footer-container">
+               <nav>
+                   <a class="footer-item" href="#">Privacy</a>
+                   <a class="footer-item" href="#">Terms</a>
+                   <a class="footer-item" href="#">Settings</a>
+               </nav>
+           </div>
+       </footer>
+
     </body>
 </html>
 
