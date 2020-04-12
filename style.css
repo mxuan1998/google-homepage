@@ -15,8 +15,8 @@ body{
 #gmail-link, #images-link{
     margin: 0 15px 0 0;
     color: rgba(0,0,0,0.87)
-    align-self: center;
-    vertical-align: end;
+    align-self: flex-end;
+    vertical-align: middle;
 }
 
 #app-button{
