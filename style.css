@@ -10,6 +10,7 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     font-size: 13px;
+    justify-content: end;
 }
 
 #gmail-link, #images-link{
